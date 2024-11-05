@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance counter</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <section class="min-h-screen bg-[#F6F6F6] flex items-center justify-center">
+        <div class="container !px-3   mx-auto flex items-center flex-col justify-center">
+            <p class="inter font-medium  text-[36px] max-sm:text-[22px] leading-[121%] text-[#808080] mb-[46px]">Advance
+                Counter app</p>
+            <div
+                class="box-advance-counter px-[88px] max-sm:px-8 bg-white pt-[57px]  rounded-[20px] max-w-[460px] flex items-center justify-center flex-col shadow-cust">
+                <p id="number" class="inter mb-9 font-medium  text-[36px] leading-[121%] text-black">0</p>
+                <div class="buttons-parent mb-9 flex-wrap mx-auto  justify-center flex gap-2 items-center">
+                    <button id="add"
+                        class="w-[138px] py-[13px] border border-[#128DFF] rounded-[4px] inter font-semibold text-[16px] text-[#128DFF]">Add
+                        One</button>
+                    <button id="save"
+                        class="w-[138px] py-[13px] bg-linear-cust rounded-[4px] inter font-semibold text-[16px] text-white ">Save</button>
+                </div>
+                <p class="inter font-medium mb-[14px] text-[16px] text-center text-[#808080]">
+                    Previous values
+                </p>
+                <p id="prev" class="inter gap-0.5 flex items-center font-medium text-[16px] mb-[34px] text-center"></p>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="min-h-screen bg-[#F6F6F6] flex items-center justify-center">
+        <div class="container !px-3   mx-auto flex items-center flex-col justify-center">
+            <p id="userInput"
+                class="inter font-medium  text-[36px] max-sm:text-[22px] leading-[121%] text-[#808080] mb-[46px]">
+                Enter text</p>
+            <div
+                class="box-text-counter px-[88px] max-sm:px-8 bg-white pt-[57px]  rounded-[20px] max-w-[460px] flex items-center justify-center flex-col shadow-cust">
+                <input type="text" class="py-3 pl-2 mb-7 pr-6 border-[2px] rounded-md " id="textInput"
+                    placeholder="Enter your name">
+                <div class="buttons-parent mb-9 flex-wrap mx-auto  justify-center flex gap-2 items-center">
+
+                    <button onclick="saveText()"
+                        class="w-[138px] py-[13px] bg-linear-cust rounded-[4px] inter font-semibold text-[16px] text-white ">Save</button>
+                </div>
+                <p class="inter font-medium mb-[14px] text-[16px] text-center text-[#808080]">
+                    your entered name
+                </p>
+                <p id="displayedText"
+                    class="inter gap-0.5 flex items-center font-medium text-[16px] mb-[34px] text-center">
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
